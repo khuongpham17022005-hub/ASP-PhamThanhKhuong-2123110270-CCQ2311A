@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#f0f0f0"/>
+  <g transform="translate(200,110)" text-anchor="middle">
+    <text font-family="Arial, sans-serif" font-size="48" fill="#ccc">🖼️</text>
+    <text y="40" font-family="Arial, sans-serif" font-size="16" fill="#aaa">Không có ảnh</text>
+  </g>
+</svg>

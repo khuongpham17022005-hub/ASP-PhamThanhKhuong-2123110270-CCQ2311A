@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ThanhKhuongCMS Solution
 
 ## Thông tin sinh viên
@@ -91,6 +90,4 @@ ThanhKhuongCMS_Solution/
 - **Frontend:** Trang chủ, Cửa hàng (lọc, phân trang), Blog, Chi tiết sản phẩm, Giỏ hàng, Thanh toán
 - **Bảo mật:** Mã hóa mật khẩu SHA256 + Salt, Cookie Authentication, [Authorize]
 - **CORS:** Chính sách `AllowReactApp` chỉ mở cho `http://localhost:3000`
-=======
 # ASP-PhamThanhKhuong-2123110270-CCQ2311A
->>>>>>> d8944cbc4c4897ed5fca5a610a29274254f9229b
