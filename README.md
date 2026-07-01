@@ -51,7 +51,7 @@ npm start
 File `.env` trong thư mục `cms.frontend`:
 ```env
 REACT_APP_API_URL=http://localhost:5129/api
-REACT_APP_IMAGE_BASE_URL=https://localhost:7041
+REACT_APP_IMAGE_BASE_URL=http://localhost:5129
 ```
 
 ## Cấu trúc thư mục chính
