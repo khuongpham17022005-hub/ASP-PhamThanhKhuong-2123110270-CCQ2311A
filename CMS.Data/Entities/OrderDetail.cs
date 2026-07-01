@@ -25,7 +25,7 @@ namespace CMS.Data.Entities
         public int Quantity { get; set; }
 
         [Column(TypeName = "decimal(18,2)")]
-        public decimal UnitPrice { get; set; } // Gi� t?i th?i di?m mua
+        public decimal UnitPrice { get; set; } // Giá tại thời điểm mua
 
         [ForeignKey("OrderId")]
         public virtual Order? Order { get; set; }

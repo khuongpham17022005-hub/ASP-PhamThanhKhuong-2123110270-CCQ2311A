@@ -17,13 +17,13 @@ namespace CMS.Data.Entities
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "T�n danh m?c kh�ng du?c d? tr?ng")]
+        [Required(ErrorMessage = "Tên danh mục không được để trống")]
         [StringLength(100)]
         public string Name { get; set; }
 
         public string? Description { get; set; }
 
-        // Quan h?: M?t danh m?c c� nhi?u s?n ph?m
+        // Quan hệ: Một danh mục có nhiều sản phẩm
         public virtual ICollection<Product>? Products { get; set; }
     }
 }

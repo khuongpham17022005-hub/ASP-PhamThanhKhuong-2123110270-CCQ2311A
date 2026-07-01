@@ -15,12 +15,12 @@ namespace CMS.Data.Entities
         public class Post
         {
             public int Id { get; set; }
-            public string Title { get; set; } // Ti�u d? b�i vi?t
-            public string Content { get; set; } // N?i dung chi ti?t
-            public string ImageUrl { get; set; } // H�nh ?nh d?i di?n
+            public string Title { get; set; } // Tiêu đề bài viết
+            public string Content { get; set; } // Nội dung chi tiết
+            public string ImageUrl { get; set; } // Hình ảnh đại diện
             public DateTime CreatedDate { get; set; } = DateTime.Now;
 
-            // Kh�a ngo?i li�n k?t t?i Category
+            // Khóa ngoại liên kết tới Category
             public int CategoryId { get; set; }
             public virtual Category Category { get; set; }
         }

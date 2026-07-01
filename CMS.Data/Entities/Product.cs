@@ -18,7 +18,7 @@ namespace CMS.Data.Entities
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "T�n s?n ph?m kh�ng du?c d? tr?ng")]
+        [Required(ErrorMessage = "Tên sản phẩm không được để trống")]
         public string Name { get; set; }
 
         public string? Description { get; set; }
@@ -31,7 +31,7 @@ namespace CMS.Data.Entities
 
         public string? ImageUrl { get; set; }
 
-        // Kh�a ngo?i n?i t?i CategoryProduct
+        // Khóa ngoại nối tới CategoryProduct
         public int CategoryProductId { get; set; }
 
         [ForeignKey("CategoryProductId")]

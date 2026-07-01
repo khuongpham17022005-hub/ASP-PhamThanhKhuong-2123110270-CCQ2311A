@@ -16,10 +16,10 @@ namespace CMS.Data.Entities
         public class Category
         {
             public int Id { get; set; }
-            public string Name { get; set; } // T�n danh m?c (vd: Tin Gi�o D?c)
+            public string Name { get; set; } // Tên danh mục (vd: Tin Giáo Dục)
             public string Description { get; set; }
 
-            // Quan h?: M?t danh m?c c� nhi?u b�i vi?t
+            // Quan hệ: Một danh mục có nhiều bài viết
             public virtual ICollection<Post> Posts { get; set; }
         }
 }

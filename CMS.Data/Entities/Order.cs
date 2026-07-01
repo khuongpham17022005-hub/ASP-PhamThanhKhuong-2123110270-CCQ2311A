@@ -22,7 +22,7 @@ namespace CMS.Data.Entities
 
         public int CustomerId { get; set; }
 
-        public int Status { get; set; } // 0: Ch? duy?t, 1: Ğang giao, 2: Ğã xong
+        public int Status { get; set; } // 0: Chá» duyá»‡t, 1: Äang giao, 2: ÄÃ£ xong
 
         public string? Notes { get; set; }
 
