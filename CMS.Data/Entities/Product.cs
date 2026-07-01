@@ -1,0 +1,40 @@
+/*
+ * Ho va ten: Pham Thanh Khuong
+ * Mssv: 2123110270
+ * Version 1.0
+ * Ngay thuc hien: 21/5/2026
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+namespace CMS.Data.Entities
+{
+    public class Product
+    {
+        [Key]
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Tên s?n ph?m không du?c d? tr?ng")]
+        public string Name { get; set; }
+
+        public string? Description { get; set; }
+
+        [Range(0, double.MaxValue)]
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal Price { get; set; }
+
+        public int StockQuantity { get; set; }
+
+        public string? ImageUrl { get; set; }
+
+        // Khóa ngo?i n?i t?i CategoryProduct
+        public int CategoryProductId { get; set; }
+
+        [ForeignKey("CategoryProductId")]
+        public virtual CategoriesProduct? CategoryProduct { get; set; }
+    }
+}
